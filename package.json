@@ -1,0 +1,27 @@
+{
+  "name": "agendabackend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartIoT-eu/agendaBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartIoT-eu/agendaBackend/issues"
+  },
+  "homepage": "https://github.com/SmartIoT-eu/agendaBackend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "package.json": "^2.0.1",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
