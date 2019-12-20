@@ -1,12 +1,11 @@
-const express = require('express');
-const app = express();
+require('dotenv').config();
 
-// Middlewares
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+const app = require('./app');
+require('./database');
 
-// Routes
-app.use(require('./routes/index'));
+async function main(){
+    await app.listen(app.get('port'));
+    console.log('Server on port', app.get('port'))
+}
 
-app.listen(3000);
-console.log('Server on port 3000');
+main();
